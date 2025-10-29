@@ -99,7 +99,7 @@ You can define your filter in `config.fish` or as a standalone function in fish 
 After that you need to register your filter with Sponge by adding its name in `sponge_filters` variable:
 
 ```fish
-set --append sponge_filters my_awesome_filter
+set -a sponge_filters my_awesome_filter
 ```
 
 Make sure to append `sponge_filters` like in the example above unless you want to disable the built in filters:

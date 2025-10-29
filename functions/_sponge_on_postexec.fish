@@ -1,14 +1,14 @@
 function _sponge_on_postexec --on-event fish_postexec
-    set --global _sponge_current_command_exit_code $status
+    set -g _sponge_current_command_exit_code $status
 
     # Remove command from the queue if it's been added previously
-    if set --local index (contains --index -- $_sponge_current_command $_sponge_queue)
-        set --erase _sponge_queue[$index]
+    if set -l index (contains --index -- $_sponge_current_command $_sponge_queue)
+        set -e _sponge_queue[$index]
     end
 
     # Ignore empty commands
     if test -n $_sponge_current_command
-        set --local command ''
+        set -l command ''
         # Run filters
         for filter in $sponge_filters
             if $filter \
@@ -19,6 +19,6 @@ function _sponge_on_postexec --on-event fish_postexec
                 break
             end
         end
-        set --prepend --global _sponge_queue $command
+        set -gp _sponge_queue $command
     end
 end
