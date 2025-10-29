@@ -17,7 +17,7 @@ Sponge quietly runs in the background and keeps your shell history clean from ty
 Install with [Fisher](https://github.com/jorgebucaran/fisher):
 
 ```fish
-fisher install meaningful-ooo/sponge
+fisher install injust/sponge
 ```
 
 ### 🤖 System requirements
