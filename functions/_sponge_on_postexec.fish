@@ -1,4 +1,4 @@
-function _sponge_on_postexec --on-event fish_postexec
+function _sponge_on_postexec --on-event=fish_postexec
     set -g _sponge_current_command_exit_code $status
 
     # Remove command from the queue if it's been added previously

@@ -41,14 +41,14 @@ functions -q \
     _sponge_on_exit
 
 # Initialize empty state for the first run
-function _sponge_install --on-event sponge_install
+function _sponge_install --on-event=sponge_install
     set -g _sponge_current_command ''
     set -g _sponge_current_command_exit_code 0
     set -g _sponge_current_command_previously_in_history false
 end
 
 # Clean up variables
-function _sponge_uninstall --on-event sponge_uninstall
+function _sponge_uninstall --on-event=sponge_uninstall
     _sponge_clear_state
     set -e sponge_version
 end
