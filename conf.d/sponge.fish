@@ -1,3 +1,5 @@
+status is-interactive; or exit
+
 # Sponge version
 set -g sponge_version 1.1.0
 
