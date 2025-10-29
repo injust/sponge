@@ -1,5 +1,4 @@
-function _sponge_on_preexec --on-event=fish_preexec \
-    --argument-names command
+function _sponge_on_preexec --on-event=fish_preexec --argument-names command
     _sponge_clear_state
 
     set -g _sponge_current_command $command
