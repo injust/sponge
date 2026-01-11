@@ -1,11 +1,5 @@
 # 🧽 Sponge [![Releases](https://img.shields.io/github/release/meaningful-ooo/sponge.svg?label=&color=%23ffffff)](https://github.com/meaningful-ooo/sponge/releases/latest)
 
-<div align="center">
-
-[![Discord](https://img.shields.io/discord/776090526410604564?color=%235866f2&label=%20&logo=discord&logoColor=%23ffffff)](https://discord.gg/KEc2MMV3T9) [![Twitch Status](https://img.shields.io/twitch/status/borisovdev?color=%239146ff&label=%20&logo=twitch&logoColor=%23ffffff)](https://twitch.tv/borisovdev)
-
-</div>
-
 > Don't you hate it when you spend half an hour searching for a command, finally find it and happily press `Enter` only to realize a couple of seconds later... it's not that one, it's another one you've entered two months ago, the one with the _typo_.
 
 > Ugh. Awful. Ungodly. Unproductive. Your day is ruined… unless you use _Sponge_.
@@ -110,7 +104,3 @@ Make sure to append `sponge_filters` like in the example above unless you want t
 ## ©️ License
 
 [MIT](LICENSE)
-
-# 🏴‍☠️ 🏰 💎 Meaningful
-
-We are the first ever blockchain state. [More](https://meaningful.ooo).
