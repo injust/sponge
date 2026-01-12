@@ -5,32 +5,32 @@ set -g sponge_version 1.1.0
 
 # Allow to repeat previous command by default
 if not set -q sponge_delay
-    set -U sponge_delay 2
+    set -g sponge_delay 2
 end
 
 # Purge entries both after `sponge_delay` entries and on exit by default
 if not set -q sponge_purge_only_on_exit
-    set -U sponge_purge_only_on_exit false
+    set -g sponge_purge_only_on_exit false
 end
 
 # Add default filters
 if not set -q sponge_filters
-    set -U sponge_filters sponge_filter_failed sponge_filter_matched
+    set -g sponge_filters sponge_filter_failed sponge_filter_matched
 end
 
 # Don't filter out commands that already have been in the history by default
 if not set -q sponge_allow_previously_successful
-    set -U sponge_allow_previously_successful true
+    set -g sponge_allow_previously_successful true
 end
 
 # Consider `0` the only successful exit code by default
 if not set -q sponge_successful_exit_codes
-    set -U sponge_successful_exit_codes 0
+    set -g sponge_successful_exit_codes 0
 end
 
 # No active regex patterns by default
 if not set -q sponge_regex_patterns
-    set -U sponge_regex_patterns
+    set -g sponge_regex_patterns
 end
 
 # Attach event handlers
