@@ -1,5 +1,5 @@
 function sponge_filter_failed --argument-names command exit_code previously_in_history
-    if test $previously_in_history = true -a $sponge_allow_previously_successful = true
+    if test $previously_in_history = true; and test $sponge_allow_previously_successful = true
         return 1
     end
 
